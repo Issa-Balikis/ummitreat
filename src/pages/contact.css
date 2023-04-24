@@ -1,0 +1,102 @@
+.contact {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+.contact--img {
+   /*  width: 500px;
+    height: 500px; */
+    height: 100%;
+    flex: 50%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.forms {
+    height: 100%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms h4 {
+    font-family: cursive;
+    color: white;
+    font-size: 3rem;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
+
+
+form input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+form textarea {
+    width: 80%;
+    margin-top: 15px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding: 5px 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    padding: 5px 10px;
+
+}
+
+form label {
+    display: flex;
+    flex-direction: row;
+    color: rgb(245, 64, 94);
+    margin-top: 15px;
+}
+
+.form--btn {
+    background: rgb(221, 35, 66);
+    color: white;
+    width: 140px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        
+    }
+.contact--img {
+    height: 70%;
+    flex: 25%;
+    padding: 20px;
+    border-radius: 30px;
+    }
+}
+
+.errors {
+    color: red;
+}
